@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+PL:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+PL:wght@100..400&display=swap');
+
+body{
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+}
+
+p {
+  margin: 0;
+}
+
+.nav-body{
+  margin: 0px;
+  padding: 16px 16px;
+  color: white;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+.nav{
+  background-color: #0D6CAC;
+  display:flex ;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links{
+  background-color: #0D6CAC;
+  display:flex ;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;   /* no underline */
+  color: #E8F2F8;            /* default color */
+}
+
+.nav a:hover {
+  color: #f0ad4e;          /* hover color (gold/yellow) */
+}
+
+.nav a.active {
+  color: #f0ad4e;
+}
+
+.icons{
+  display:flex ;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.nav i:hover{
+  color: #f0ad4e;
+}
+
+.pages{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.links button{
+  background-color: #0D6CAC;
+  color: white;
+  font-weight: 600;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  line-height: 35px;
+  border: 2px #E8F2F8 solid;
+  border-radius: 8px;
+  width: 110px;
+}
+
+.links button:hover{
+  color: #0D6CAC;
+  background-color: white;
+}
+
+.footer-container{
+  background-image: url(./asserts/div.png);
+  background-position: center;
+  background-size: cover;
+  background-color: #E8F2F8;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px 20px;
+  color: #0D6CAC;
+}
+
+.footer-container .left{
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.footer-container .middle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-container .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-container .icons i {
+  font-size: 25px;
+}
+
+.middle a{
+  text-decoration: none;
+  font-weight: 600;
+  color: #0D6CAC;
+  line-height: 24px;
+}
+
+.middle a.active{
+  color: #073D62;
+}
+
+.middle button{
+  background-color: #0D6CAC;
+  border: 1px solid #0D6CAC;
+  color: white;
+  border-radius: 15px;
+  padding: 7px 10px;
+}
+
+.middle button:hover {
+  background-color: #073D62;
+}
+
+.middle a:hover {
+  color: #055080;
+}
+
+
+.follow{
+  font-family: "Akaya Telivigala";
+  font-weight: 400;
+  font-size: 34px;
+}
+
+.hero{
+  background-image: url(./asserts/calli.png);
+  height: 440px;
+  background-color: #0D6CAC;
+  background-position: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 56px;
+}
+
+.form{
+  background-color: #0D6CAC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 610px;
+  gap: 30px;
+}
+
+.form p{
+  color: #E8F2F8;
+}
+
+.fill{
+  border: 2px solid #FFCB00;
+  padding: 29px 29px 55px 29px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+}
+
+.fill form input,
+.fill form textarea {
+  display: block;
+  width: 562px;
+  padding: 15px;
+  margin-bottom: 15px;  
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  font-size: 14px;
+  box-sizing: border-box;
+  align-items: center;
+}
