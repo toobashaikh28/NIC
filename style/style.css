@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+PL:wght@100..400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+PL:wght@100..400&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+PL:wght@100..400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+PL:wght@100..400&display=swap");
 
-body{
+body {
   font-family: "Montserrat", sans-serif;
   margin: 0px;
+  color: #e8f2f8;
 }
 
 p {
   margin: 0;
 }
 
-.nav-body{
+.nav-body {
   margin: 0px;
   padding: 16px 16px;
   color: white;
@@ -21,82 +22,82 @@ p {
   line-height: 25px;
 }
 
-.nav{
-  background-color: #0D6CAC;
-  display:flex ;
+.nav {
+  background-color: #0d6cac;
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.links{
-  background-color: #0D6CAC;
-  display:flex ;
+.links {
+  background-color: #0d6cac;
+  display: flex;
   align-items: center;
   gap: 30px;
 }
 
 .nav a {
-  text-decoration: none;   /* no underline */
-  color: #E8F2F8;            /* default color */
+  text-decoration: none; /* no underline */
+  color: #e8f2f8; /* default color */
 }
 
 .nav a:hover {
-  color: #f0ad4e;          /* hover color (gold/yellow) */
+  color: #f0ad4e; /* hover color (gold/yellow) */
 }
 
 .nav a.active {
   color: #f0ad4e;
 }
 
-.icons{
-  display:flex ;
+.icons {
+  display: flex;
   align-items: center;
   gap: 10px;
   cursor: pointer;
   font-size: 30px;
 }
 
-.nav i:hover{
+.nav i:hover {
   color: #f0ad4e;
 }
 
-.pages{
+.pages {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-.links button{
-  background-color: #0D6CAC;
+.links button {
+  background-color: #0d6cac;
   color: white;
   font-weight: 600;
   font-family: "Jost", sans-serif;
   font-size: 18px;
   line-height: 35px;
-  border: 2px #E8F2F8 solid;
+  border: 2px #e8f2f8 solid;
   border-radius: 8px;
   width: 110px;
   cursor: pointer;
 }
 
-.links button:hover{
-  color: #0D6CAC;
+.links button:hover {
+  color: #0d6cac;
   background-color: white;
 }
 
-.footer-container{
+.footer-container {
   background-image: url(./asserts/div.png);
   background-position: center;
   background-size: cover;
-  background-color: #E8F2F8;
+  background-color: #e8f2f8;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   padding: 20px 20px;
-  color: #0D6CAC;
+  color: #0d6cac;
 }
 
-.footer-container .left{
+.footer-container .left {
   display: flex;
   flex-direction: column;
   gap: 70px;
@@ -119,56 +120,55 @@ p {
   font-size: 25px;
 }
 
-.middle a{
+.middle a {
   text-decoration: none;
   font-weight: 600;
-  color: #0D6CAC;
+  color: #0d6cac;
   line-height: 24px;
 }
 
-.middle a.active{
-  color: #073D62;
+.middle a.active {
+  color: #073d62;
 }
 
-.middle button{
-  background-color: #0D6CAC;
-  border: 1px solid #0D6CAC;
+.middle button {
+  background-color: #0d6cac;
+  border: 1px solid #0d6cac;
   color: white;
   border-radius: 15px;
   padding: 7px 10px;
 }
 
 .middle button:hover {
-  background-color: #073D62;
+  background-color: #073d62;
 }
 
 .middle a:hover {
   color: #055080;
 }
 
-
-.follow{
+.follow {
   font-family: "Akaya Telivigala";
   font-weight: 400;
   font-size: 34px;
 }
 
-.hero{
+.hero {
   background-image: url(../asserts/calli.png);
   height: 440px;
-  background-color: #0D6CAC;
+  background-color: #0d6cac;
   background-position: center;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #e8f2f8;
   font-weight: 700;
   font-size: 56px;
 }
 
-.form{
-  background-color: #0D6CAC;
+.form {
+  background-color: #0d6cac;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -178,12 +178,14 @@ p {
 }
 
 .form .text p {
-  color: #E8F2F8;
+  color: #e8f2f8;
   text-align: center;
+  line-height: 27px;
+  font-size: 19px;
 }
 
-.fill{
-  border: 2px solid #FFCB00;
+.fill {
+  border: 2px solid #ffcb00;
   padding: 29px 29px 55px 29px;
   border-radius: 8px;
   display: flex;
@@ -196,7 +198,7 @@ p {
   display: block;
   width: 562px;
   padding: 15px;
-  margin-bottom: 15px;  
+  margin-bottom: 15px;
   border: none;
   outline: none;
   border-radius: 3px;
@@ -206,18 +208,197 @@ p {
 }
 
 .fill button {
-  background-color: #0D6CAC;
+  background-color: #0d6cac;
   color: white;
   text-transform: uppercase;
-  border: 2px solid #0D6CAC;
+  border: 2px solid #0d6cac;
   font-weight: 700;
   padding: 15px 30px;
 }
 
 .fill button:hover {
   background-color: white;
-  color: #0D6CAC;
-  border: 2px solid #0D6CAC;
+  color: #0d6cac;
+  border: 2px solid #0d6cac;
   cursor: pointer;
   transition: 0.3s;
+}
+
+.about {
+  background-color: #0d6cac;
+}
+
+.div1 {
+  display: flex;
+  justify-content: space-around;
+  color: #e8f2f8;
+  padding: 60px 150px;
+  gap: 20px;
+}
+
+.div1 p,
+.div1 ul {
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 27px;
+  color: #e8f2f8;
+}
+
+.div4 {
+  display: flex;
+  align-items: end;
+  color: white;
+  padding: 60px 150px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.div4 h1 {
+  padding-right: 55px;
+}
+
+.sat {
+  color: #ffcb00;
+}
+
+.div3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 150px;
+  gap: 20px;
+}
+
+.div3 .info .heading {
+  background-color: #feb458;
+  color: white;
+  border: 2px solid #feb458;
+  border-radius: 20px;
+  padding: 8px 30px;
+}
+
+.div3 .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  color: #e8f2f8;
+  width: 570px;
+  gap: 35px;
+}
+
+.div3 .info h2 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.masjid {
+  background-color: #0d6cac;
+}
+
+.align {
+  display: flex;
+  align-items: center;
+}
+
+.divcol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 150px; /* breathing space */
+  gap: 30px;
+}
+
+.donate {
+  margin: 0px;
+  padding: 0px;
+  line-height: 56px;
+  size: 40px;
+  font-weight: 900px;
+  letter-spacing: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.style {
+  font-weight: 500;
+  size: 23px;
+  line-height: 27px;
+}
+
+.raised {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 250px;
+  text-align: center;
+}
+
+.num {
+  line-height: 56px;
+  size: 900px;
+  font-weight: 900px;
+  letter-spacing: 0px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffcb00;
+}
+
+.raised .amount .text {
+  font-weight: 600;
+  size: 20px;
+  line-height: 25px;
+  margin: 0;
+}
+
+.anima{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar {
+  height: 25px;
+  width: 100%;
+  background: #dfe6e9;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 30px;
+  width: 70%;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: #ffcc00;
+  border-radius: 20px;
+  animation: fillBar 10s ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fillBar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 45%;
+  }
+}
+
+.donate-btn {
+  background: transparent;
+  border: 2px solid #ffcc00;
+  color: #ffcc00;
+  padding: 10px 25px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 90px;
+}
+
+.donate-btn:hover {
+  background: #ffcc00;
+  color: #0d6fb8;
 }
