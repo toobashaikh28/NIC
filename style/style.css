@@ -76,6 +76,7 @@ p {
   border: 2px #E8F2F8 solid;
   border-radius: 8px;
   width: 110px;
+  cursor: pointer;
 }
 
 .links button:hover{
@@ -153,7 +154,7 @@ p {
 }
 
 .hero{
-  background-image: url(./asserts/calli.png);
+  background-image: url(../asserts/calli.png);
   height: 440px;
   background-color: #0D6CAC;
   background-position: center;
@@ -176,14 +177,15 @@ p {
   gap: 30px;
 }
 
-.form p{
+.form .text p {
   color: #E8F2F8;
+  text-align: center;
 }
 
 .fill{
   border: 2px solid #FFCB00;
   padding: 29px 29px 55px 29px;
-  border-radius: 5px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   width: 560px;
@@ -201,4 +203,21 @@ p {
   font-size: 14px;
   box-sizing: border-box;
   align-items: center;
+}
+
+.fill button {
+  background-color: #0D6CAC;
+  color: white;
+  text-transform: uppercase;
+  border: 2px solid #0D6CAC;
+  font-weight: 700;
+  padding: 15px 30px;
+}
+
+.fill button:hover {
+  background-color: white;
+  color: #0D6CAC;
+  border: 2px solid #0D6CAC;
+  cursor: pointer;
+  transition: 0.3s;
 }
