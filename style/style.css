@@ -2,6 +2,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+PL:wght@100..400&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0px;
@@ -68,8 +73,8 @@ p {
 }
 
 .links button {
-  background-color: #0d6cac;
-  color: white;
+  background-color: transparent;
+  color: #e8f2f8;
   font-weight: 600;
   font-family: "Jost", sans-serif;
   font-size: 18px;
@@ -81,8 +86,8 @@ p {
 }
 
 .links button:hover {
-  color: #0d6cac;
-  background-color: white;
+  color: #f0ad4e;
+  border: 2px  #f0ad4e solid;
 }
 
 .footer-container {
@@ -217,11 +222,11 @@ p {
 }
 
 .fill button:hover {
-  background-color: white;
-  color: #0d6cac;
-  border: 2px solid #0d6cac;
+  background-color: #FFCB00;
+  color: black;
+  border: 2px solid #FFCB00;
+  border-radius: 25px;
   cursor: pointer;
-  transition: 0.3s;
 }
 
 .about {
@@ -372,8 +377,8 @@ p {
   width: 0%;
   background: #ffcc00;
   border-radius: 20px;
-  animation: fillBar 10s ease forwards;
-  animation-delay: 1s;
+  animation: fillBar 15s ease forwards;
+  animation-delay: 8s;
 }
 
 @keyframes fillBar {
@@ -401,4 +406,185 @@ p {
 .donate-btn:hover {
   background: #ffcc00;
   color: #0d6fb8;
+}
+
+.team{
+  background-color: #0d6cac;
+  padding: 60px 180px 0px 180px;
+}
+
+.team .content{
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.pics{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pics .pic{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.title{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 47px;
+  text-align: center;
+  color: #FFCB00;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.pics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pics.row2 {
+  justify-content: space-around;
+}
+
+.spaces{
+  padding-bottom: 100px;
+}
+
+.home .hero{
+  padding: 100px 303px;
+  background-image: url(../asserts/call2.png);
+  background-position: center;
+  background-size: cover;
+  background-color: #0d6cac;
+  text-align: center;
+}
+
+.home .hero .cont p:nth-child(1){
+  font-family: "Almarai", sans-serif;
+  font-weight: 300;
+  font-size: 34px;
+  line-height: 47px;
+  padding-bottom: 35px;
+}
+
+.home .hero .cont p:nth-child(2){
+  font-family: "Inter", sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+  color: #FFCB00;
+}
+
+.home .hero .cont p:nth-child(3){
+  font-weight: 500;
+  font-size: 36px;
+  text-transform: uppercase;
+  padding-bottom: 45px;
+}
+
+.home .hero .cont p:nth-child(4){
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.home .second{
+  background-color: #E8F2F8;
+  color: #0D6CAC;
+  height: 558px;
+  padding: 60px 186px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home .second .prayer{
+  width: 334px;
+  height: 450px;
+  border: 3px solid #FFCB00;
+  border-top-left-radius: 220px;
+  border-top-right-radius: 220px; 
+  padding: 10px;
+}
+
+.home .second .prayer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home .second .prayer > p:first-of-type{
+  text-align: center;
+  padding: 40px 10px;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 32px;
+}
+
+.lu{
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 15px ;
+}
+
+.timings{
+  display: flex;
+  justify-content: space-between; /* pushes left & right apart */
+  width: 100%; 
+}
+
+.time{
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  gap: 20px;
+}
+
+.face h1{
+  font-size: 33px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.face .feed{
+  display: contents;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.loca {
+  background-color: #0D6CAC;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loca iframe {
+  max-width: 100%; 
+  border-radius: 10px; 
+  padding-bottom: 50px;
+}
+
+
+.loca h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  padding: 20px;
+  padding-bottom: 50px;
+  margin: 0;
 }
