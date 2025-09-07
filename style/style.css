@@ -239,6 +239,15 @@ p {
   color: #e8f2f8;
   padding: 60px 150px;
   gap: 20px;
+  width: 80%;
+}
+
+.div_text{
+  width: 50%;
+}
+
+.div_pic{
+  width: 50%;
 }
 
 .div1 p,
