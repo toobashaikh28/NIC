@@ -201,7 +201,8 @@ p {
 .fill form input,
 .fill form textarea {
   display: block;
-  width: 562px;
+  width: 100%;
+  box-sizing: border-box;
   padding: 15px;
   margin-bottom: 15px;
   border: none;
@@ -237,9 +238,10 @@ p {
   display: flex;
   justify-content: space-around;
   color: #e8f2f8;
-  padding: 60px 150px;
   gap: 20px;
-  width: 80%;
+  padding: 60px 5%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .div_text{
