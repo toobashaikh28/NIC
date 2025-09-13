@@ -609,6 +609,9 @@ p {
   padding-bottom: 50px;
 }
 
+.divcol{
+  padding: 1%;
+}
 
 .loca h1 {
   text-transform: uppercase;
