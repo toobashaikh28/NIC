@@ -11,6 +11,9 @@
     <header>
         <nav class="nav nav-body">
             <div class="logo nav"><img src="./asserts/logo.png" alt="" title="logo"></div>
+            <div class="burger">
+            <i class="bi bi-list"></i>
+            </div>
             <div class="pages nav">
                 <div class="links">
                     <a href="index.html">Home</a>
@@ -72,7 +75,7 @@
                     <p>We are currently gathering donations for the first phase of constructing the mosque. The first phase includes the basic construction of the masjid, which includes areas for prayers (separate for men and women), ablution, and a conference area. The initial target set to get ownership of the land is 300,000 USD (equal to 3 million Swedish Kroner). The current donations received can be tracked using the donation progress bar below. It is our humble request that you take part in donations and help us achieve our target of getting the first established mosque built in the Luleå, Northern Sweden.</p>
                 </div>
                 <div class="content">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/z9se1w20bPY?si=dM2PPbxwtRaS20mi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe height="315" src="https://www.youtube.com/embed/z9se1w20bPY?si=dM2PPbxwtRaS20mi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <h1 class="donate">DONATE GENEROUSLY</h1>
                 </div>
                 <div class="content style">
@@ -134,6 +137,13 @@
             </div>
         </div>
     </footer>
-    
+    <script>
+  const burger = document.querySelector(".burger");
+  const pages = document.querySelector(".pages");
+
+  burger.addEventListener("click", () => {
+    pages.classList.toggle("active");
+  });
+</script>
 </body>
 </html>

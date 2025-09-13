@@ -10,7 +10,9 @@
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0px;
+  overflow-wrap: break-word;
   color: #e8f2f8;
+  
 }
 
 p {
@@ -170,6 +172,7 @@ p {
   color: #e8f2f8;
   font-weight: 700;
   font-size: 56px;
+  text-align: center;
 }
 
 .form {
@@ -237,6 +240,7 @@ p {
 .div1 {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   color: #e8f2f8;
   gap: 20px;
   padding: 60px 5%;
@@ -244,11 +248,7 @@ p {
   box-sizing: border-box;
 }
 
-.div_text{
-  width: 50%;
-}
-
-.div_pic{
+.div_text, .div_pic {
   width: 50%;
 }
 
@@ -264,7 +264,7 @@ p {
   display: flex;
   align-items: end;
   color: white;
-  padding: 60px 150px;
+  padding: 2% 3%;
   flex-direction: column;
   text-align: center;
 }
@@ -280,7 +280,8 @@ p {
 .div3 {
   display: flex;
   justify-content: space-between;
-  padding: 60px 150px;
+  flex-wrap: wrap;
+  padding: 3% 4%;
   gap: 20px;
 }
 
@@ -300,6 +301,15 @@ p {
   color: #e8f2f8;
   width: 570px;
   gap: 35px;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.div3 .info:hover {
+  transform: translateY(-5px); /* small lift */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* stronger shadow */
+  cursor: pointer;
 }
 
 .div3 .info h2 {
@@ -379,7 +389,7 @@ p {
   background: #dfe6e9;
   border-radius: 20px;
   overflow: hidden;
-  margin: 30px;
+  margin: 1%;
   width: 70%;
 }
 
@@ -421,7 +431,7 @@ p {
 
 .team{
   background-color: #0d6cac;
-  padding: 60px 180px 0px 180px;
+  padding: 3% 5%;
 }
 
 .team .content{
@@ -430,11 +440,18 @@ p {
   margin-bottom: 50px;
 }
 
+.content iframe{
+  max-width: 100%;
+}
 .pics{
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
+}
+
+.div_pic iframe{
+  max-width: 100%;
 }
 
 .pics .pic{
@@ -466,6 +483,7 @@ p {
 
 .pics.row2 {
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .spaces{
@@ -473,7 +491,7 @@ p {
 }
 
 .home .hero{
-  padding: 100px 303px;
+  padding: 20px 5px 40px 5px;
   background-image: url(../asserts/call2.png);
   background-position: center;
   background-size: cover;
@@ -511,11 +529,13 @@ p {
 .home .second{
   background-color: #E8F2F8;
   color: #0D6CAC;
-  height: 558px;
-  padding: 60px 186px;
+  height: auto;
+  padding: 30px 60px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .home .second .prayer{
@@ -598,4 +618,231 @@ p {
   padding: 20px;
   padding-bottom: 50px;
   margin: 0;
+}
+
+/* Burger hidden on large screens */
+.burger {
+  display: none;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hide menu initially on mobile */
+.pages {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Mobile nav */
+@media (max-width: 1100px) {
+  .pages {
+    position: absolute;
+    top: 70px; /* below navbar */
+    right: 0;
+    background: #0d6cac;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    display: none; /* hidden by default */
+  }
+
+  .pages.active {
+    display: flex; /* show when active */
+  }
+
+  .burger {
+    display: block; /* show burger */
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-container .left,
+  .footer-container .middle,
+  .footer-container .right {
+    align-items: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .div1 {
+    flex-direction: column;   /* stack them */
+    text-align: center;
+  }
+
+  .div_text, .div_pic {
+    width: 100%;             /* full width */
+  }
+
+  .div_pic img {
+    max-width: 100%;         /* responsive image */
+    height: auto;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .div1 {
+    flex-direction: column; /* stack items */
+    align-items: center; /* center content */
+    text-align: center; /* center text */
+  }
+
+  .div_text, 
+  .div_pic {
+    width: 100%;  /* full width */
+  }
+
+  .div_pic img {
+    max-width: 90%; /* prevent overflow */
+    height: auto;
+  }
+}
+
+@media (max-width: 600px){
+  .div4 {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 2% 3%;
+  flex-direction: column;
+  text-align: center;
+  }
+  .div4 img{
+    max-width: 90%;
+  }
+}
+
+/* Tablet screens */
+@media (max-width: 900px) {
+  .raised {
+    gap: 100px; /* smaller gap */
+    flex-wrap: wrap; /* allow wrapping */
+  }
+
+  .num {
+    font-size: 36px; /* scale down numbers */
+    line-height: 44px;
+  }
+
+  .raised .amount .text {
+    font-size: 16px;
+  }
+}
+
+/* Mobile large screens */
+@media (max-width: 600px) {
+  .raised {
+    flex-direction: column; /* stack vertically */
+    gap: 20px;
+  }
+
+  .num {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .raised .amount .text {
+    font-size: 14px;
+  }
+
+  .progress-bar {
+    width: 90%; /* narrower bar */
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 400px) {
+  .num {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .raised .amount .text {
+    font-size: 13px;
+  }
+
+  .donate-btn {
+    font-size: 12px;
+    padding: 8px 20px;
+  }
+}
+
+img{
+  max-width: 100%;
+}
+
+/* Default: big screens */
+.fill {
+  width: 560px;
+  max-width: 100%; /* prevent overflow */
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .fill {
+    width: 80%;   /* take 80% of screen */
+    padding: 20px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 600px) {
+  .fill {
+    width: 90%;   /* almost full width */
+    padding: 15px;
+  }
+
+  .fill form input,
+  .fill form textarea {
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  .fill button {
+    width: 100%;  /* button spans full width */
+  }
+}
+
+/* Extra small screens (350px and below) */
+@media (max-width: 400px) {
+  .fill {
+    border: none;
+    width: 95%;   /* take almost full width */
+    padding: 1px;
+  }
+
+  .fill form input,
+  .fill form textarea {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .fill button {
+    width: 100%;   /* button full width */
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  .form .text p {
+    font-size: 15px; /* smaller text */
+    line-height: 22px;
+  }
 }
