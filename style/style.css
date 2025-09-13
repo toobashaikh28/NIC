@@ -623,6 +623,10 @@ p {
   margin: 0;
 }
 
+.masjid p{
+  font-size: 18px;
+}
+
 /* Burger hidden on large screens */
 .burger {
   display: none;
